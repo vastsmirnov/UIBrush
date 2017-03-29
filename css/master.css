@@ -184,7 +184,7 @@ p {
   width: 90%;
   margin: 0 auto;
   font-size: 0;
-  padding: 60px 0;
+  padding: 60px 0 50px 0;
 }
 .trim {
   border-bottom: 1px solid rgb(232,232,232)
@@ -203,7 +203,7 @@ p {
   text-align: center;
 }
 .sub-title {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .about-img {
   display: inline-block;
@@ -236,13 +236,55 @@ p {
 .align-center {
   text-align: center;
 }
+.portfolio-content {
+  width: 100%;
+  font-size: 0;
+  text-align: justify;
+}
 .portfolio-item {
   display: inline-block;
   width: 30%;
   overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0;
 }
-.portfolio-item:nth-child(3n-1){
-  margin: 0 2%;
+.portfolio-content:after {
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 100%;
+	visibility: hidden;
+	overflow: hidden;
+}
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-item-title {
+  width: 100%;
+  background-color: #fff;
+  font-size: 0;
+  border: 1px solid rgb(232,232,232);
+  padding: 25px 15px;
+  box-sizing: border-box;
+}
+.portfolio-item-title-name {
+  width: 50%;
+  vertical-align: bottom;
+}
+.portfolio-item-title-type {
+  width: 50%;
+  vertical-align: bottom;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.inline-block {
+  display: inline-block;
 }
 #footer {
   width: 100%;
