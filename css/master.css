@@ -149,12 +149,12 @@ p {
 #sl3:checked~#slider-list .slider-item:nth-child(3)>.slide {
     width: 100%;
     opacity: 1;
-    transition: opacity 1s linear 0s;
+    transition: opacity 2s ease-out 0.2s;
 }
 .title {
   position: absolute;
   width: 100%;
-  top: 48%;
+  bottom: 20%;
   left: 0;
   text-align: center;
 }
