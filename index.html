@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <title>UIBrush</title>
 </head>
 <body>
@@ -105,7 +105,7 @@
                 <p class="inline-block padding-none">Photo</p>
               </div>
             </div>
-          </div class="portfolio-item-title">
+          </div>
           <div class="portfolio-item">
             <img src="img/pj-one2.png" alt="" class="portfolio-img">
             <div class="portfolio-item-title">
@@ -116,7 +116,7 @@
                 <p class="inline-block padding-none">Web Design</p>
               </div>
             </div>
-          </div class="portfolio-item-title">
+          </div>
           <div class="portfolio-item">
             <img src="img/pj-one3.png" alt="" class="portfolio-img">
             <div class="portfolio-item-title">
@@ -148,29 +148,37 @@
           <h2>SERVICES</h2>
           <p class="sub-title padding-none">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore magna.</p>
         </header>
-        <div class="content">
+        <div class="services-content">
           <div class="services-item">
-            <div></div>
-            <h2>Photography</h2>
-            <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+            <div class="icon-wrapper">
+              <i class="fa fa-camera"></i>
+            </div>
+            <h2 class="service-title align-center">Photography</h2>
+            <p class="service-text align-center">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
             <a class="services-btn" href="">Read More</a>
           </div>
           <div class="services-item">
-            <div></div>
-            <h2>Painting</h2>
-            <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+            <div class="icon-wrapper">
+              <i class="fa fa-paint-brush"></i>
+            </div>
+            <h2 class="service-title align-center">Painting</h2>
+            <p class="service-text align-center">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
             <a class="services-btn" href="">Read More</a>
           </div>
           <div class="services-item">
-            <div></div>
-            <h2>video editing</h2>
-            <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non</p>
+            <div class="icon-wrapper">
+              <i class="fa fa-cut"></i>
+            </div>
+            <h2 class="service-title align-center">video editing</h2>
+            <p class="service-text align-center">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
             <a class="services-btn" href="">Read More</a>
           </div>
           <div class="services-item">
-            <div></div>
-            <h2>web design</h2>
-            <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+            <div class="icon-wrapper">
+              <i class="fa fa-html5"></i>
+            </div>
+            <h2 class="service-title align-center">web design</h2>
+            <p class="service-text align-center">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
             <a class="services-btn" href="">Read More</a>
           </div>
         </div>
@@ -182,19 +190,25 @@
           <h2>CONTACT US</h2>
           <p class="sub-title padding-none">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore magna.</p>
         </header>
-        <div class="content">
+        <div class="contact-content">
           <div class="contact-text">
-            <h3>Contact Info</h3>
+            <h3 class="contact-text-title">Contact Info</h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </p>
+            <h3>Address</h3>
+            <p>1931 Dawson Drive,<br>
+               15th Avenue,<br>
+               Little Rock, AR 72211</p>
           </div>
-          <h3>Address</h3>
-          <p>Address  1931 Dawson Drive, 15th Avenue, Little Rock, AR 72211</p>
           <form action="" class="contact-form">
-            <input type="text" name="" value="" placeholder="Name...">
-            <input type="text" name="" value="" placeholder="E-Mail...">
-            <input type="text" name="" value="" placeholder="Subject...">
-            <textarea name="name" rows="8" cols="80" placeholder="Message..."></textarea>
-            <input type="submit" name="" id="" class="btn" value="Submite">
+            <div class="wrapper-input-line">
+              <input type="text" name="name" value="" placeholder="Name..." class="input-form custom-width">
+              <input type="text" name="email" value="" placeholder="E-Mail..." class="input-form custom-width">
+            </div>
+            <input type="text" name="" value="" placeholder="Subject..." class="input-form full-width">
+            <textarea name="name"  placeholder="Message..." rows="5" class="textarea-form"></textarea>
+            <div class="wrapper-form-submit">
+              <input type="submit" name="" id="" class="btn" value="Submit">
+            </div>
           </form>
         </div>
       </div>
