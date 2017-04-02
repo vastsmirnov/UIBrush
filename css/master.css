@@ -1,7 +1,6 @@
 html,body {
   margin: 0;
   padding: 0;
-  max-width: 1350px;
 }
 @font-face {
     font-family: 'OpensansBold';
@@ -30,7 +29,7 @@ h2 {
 }
 h3 {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 30px;
 }
 h1,h2,h3 {
   font-family: "OpensansBold";
@@ -41,6 +40,7 @@ p {
   padding: 15px 0;
 }
 .wrapper-page {
+  max-width: 1350px;
   margin: 0 auto;
 }
 /**/
@@ -91,7 +91,7 @@ p {
   top: 0;
   left: 0;
   font-size: 0;
-  padding: 30px 90px;
+  padding: 3% 7%;
   z-index: 10;
 }
 .logo {
@@ -108,13 +108,37 @@ p {
   font-weight: 700;
   line-height: 30px;
 }
-.logo-title:last-of-type::after {
+.logo-title::after {
   content: ".";
   color: #fff;
   font-size: 40px;
   font-family: Verdana, Regular;
   font-weight: 400;
   line-height: 0px;
+}
+.wrapper-toggle-nav {
+  width: 80%;
+  text-align: right;
+  vertical-align: bottom;
+  display: none;
+  font-size: 0;
+}
+#toggle-menu-btn {
+width: 25px;
+height: 25px;
+box-sizing: border-box;
+border: 1px solid #fff;
+background-color: transparent;
+border-radius: 5px;
+padding: 0;
+}
+.toggle-icon {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 4px auto;
+  background-color: #fff;
 }
 .nav-list {
   display: inline-block;
@@ -161,7 +185,7 @@ p {
 }
 .slider-label-wrapper {
   position: absolute;
-  top: 90%;
+  bottom: 5%;
   left: 50%;
   margin-left: -52px;
   font-size: 0;
@@ -197,7 +221,7 @@ p {
 }
 .title-text {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
 }
 .btn {
   font-family: "OpensansBold";
@@ -265,6 +289,7 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 0;
+  vertical-align: top;
 }
 .portfolio-content:after {
 	content: "";
@@ -458,4 +483,71 @@ p {
   width: 100%;
   text-align: center;
   background-color:#39c9da;
+}
+@media (max-width: 910px) {
+  .container {
+    padding: 30px 0;
+  }
+  .services-item {
+    width: 45%;
+  }
+  .portfolio-item {
+    width: 45%;
+  }
+  #header-nav {
+    padding: 3% 3%;
+  }
+}
+@media (max-width: 720px) {
+  .about-img,.about-content,.contact-text,.contact-form {
+    display: block;
+    width: 100%;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .btn {
+    font-size:16px;
+    line-height: 32px;
+    width: 150px;
+  }
+  .collapse {
+    display: none;
+  }
+  .wrapper-toggle-nav{
+    display: inline-block;
+  }
+  #header-nav {
+    position: relative !important;
+    background-color: #666;
+  }
+}
+@media (max-width: 480px) {
+  .services-item {
+    width: 100%;
+  }
+  .portfolio-item {
+    width: 100%;
+  }
+  .wrapper-page {
+    min-width: 320px;
+  }
+  .input-form {
+    display: block;
+  }
+  .custom-width {
+    width: 100%;
+  }
+  h1 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .logo-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 320px) {
+  /*основной заголовок плывет*/
 }
