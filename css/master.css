@@ -484,6 +484,8 @@ padding: 0;
   }
   .contact-info {
     text-align: justify;
+    padding: 0;
+    
   }
   h1 {
     font-size: 28px;
