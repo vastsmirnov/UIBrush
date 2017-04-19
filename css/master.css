@@ -280,24 +280,16 @@ padding: 0;
 .portfolio-content {
   width: 100%;
   font-size: 0;
-  text-align: justify;
+  text-align: center;
 }
 .portfolio-item {
   display: inline-block;
   width: 30%;
   overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 0;
   vertical-align: top;
-}
-.portfolio-content:after {
-	content: "";
-	display: inline-block;
-	height: 0;
-	width: 100%;
-	visibility: hidden;
-	overflow: hidden;
+  margin: 20px 0;
+  padding: 0 2%;
 }
 .portfolio-img-wrapper {
   width: 100%;
@@ -353,25 +345,20 @@ padding: 0;
   width: 50%;
   vertical-align: bottom;
 }
+.services-content {
+  font-size: 0;
+  text-align: center;
+}
 .services-item {
   display: inline-block;
-  width: 24%;
+  width: 23%;
   overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 1%;
   font-size: 0;
   vertical-align: top;
   border: 1px solid rgb(232,232,232);
   background-color: #fff;
   padding: 20px;
-}
-.services-content:after {
-	content: "";
-	display: inline-block;
-	height: 0;
-	width: 100%;
-	visibility: hidden;
-	overflow: hidden;
 }
 .icon-wrapper {
   text-align: center;
@@ -426,7 +413,7 @@ padding: 0;
   width: 100%;
   font-size: 0;
 }
-.contact-text {
+.contact-info {
   display: inline-block;
   width: 50%;
   vertical-align: top;
@@ -435,6 +422,7 @@ padding: 0;
   display: inline-block;
   width: 50%;
   vertical-align: top;
+  font-size: 0;
 }
 .input-form,.textarea-form {
   border: 1px solid #e6e6e6;
@@ -445,33 +433,24 @@ padding: 0;
   width: 100%;
   resize: none;
 }
-.full-width {
-  width: 100%;
-}
-.wrapper-input-line {
-  width: 100%;
-  font-size: 0;
-  text-align: justify;
-}
-.wrapper-input-line:after {
-	content: "";
-	display: inline-block;
-	height: 0;
-	width: 100%;
-	visibility: hidden;
-	overflow: hidden;
-}
-.custom-width {
+.input-name {
   width: 47%;
+  margin-right: 6%;
+}
+.input-email {
+  width: 47%;
+}
+.input-titleMessage {
+  width: 100%;
 }
 .wrapper-form-submit {
   width: 100%;
   text-align: right;
 }
-.contact-text {
+.contact-info {
   padding-right: 40px;
 }
-.contact-text-title::after {
+.contact-info-title::after {
   content: "";
   display: block;
   width: 20%;
@@ -499,9 +478,12 @@ padding: 0;
   }
 }
 @media (max-width: 720px) {
-  .about-img,.about-content,.contact-text,.contact-form {
+  .about-img,.about-content,.contact-info,.contact-form {
     display: block;
     width: 100%;
+  }
+  .contact-info {
+    text-align: justify;
   }
   h1 {
     font-size: 28px;
@@ -536,7 +518,11 @@ padding: 0;
   .input-form {
     display: block;
   }
-  .custom-width {
+  .input-name {
+    width: 100%;
+    margin-right: 0;
+  }
+  .input-email {
     width: 100%;
   }
   h1 {
